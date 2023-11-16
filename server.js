@@ -8,7 +8,7 @@ app.use(express.json());
 const baseRouter = express.Router();
 
 baseRouter.get('/greeting', (req, res) => {
-    return res.json('Hello Wold!');
+    return res.send('Hello Wold!');
 });
 
 baseRouter.post('/add', (req, res) => {
